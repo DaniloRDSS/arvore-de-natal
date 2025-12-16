@@ -59,6 +59,15 @@ body {
   0 0 100px #fffacd;
 }
 
+/* -------------------------------------------------------------------
+ * Créditos do CSS da Árvore 3D e Animações
+ *
+ * O design da árvore (.a3d) e as animações base (rotate, pulse) 
+ * foram adaptados do trabalho de @coding.stella.
+ * Link: [https://codingstella.com/how-to-make-christmas-tree-animation-using-html-and-css/]
+ * -------------------------------------------------------------------
+ */
+ 
 .main-container {
     display: flex;
     flex-direction: column; 
