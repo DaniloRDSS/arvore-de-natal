@@ -56,7 +56,7 @@ O coração deste projeto está nas animações e manipulações 3D feitas intei
 O layout e as animações em 3D da árvore de Natal e o efeito de neve (bolhas) foram inspirados e adaptados de um código-fonte de demonstração encontrado online.
 
 * **Autor Original/Inspiração:** Stella (via @coding.stella)
-* **Link Original (se disponível):** [Insira aqui o link exato para o post, Codepen, ou repositório original]
+* **Link Original (se disponível):** https://codingstella.com/how-to-make-christmas-tree-animation-using-html-and-css/
 
 Agradeço ao(à) autor(a) por compartilhar este belo exemplo de animação CSS 3D.
 
