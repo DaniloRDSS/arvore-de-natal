@@ -9,12 +9,12 @@
       const musica = document.getElementById("audi");
 
       if (nome.trim() !== "") {
-        // Adiciona o nome à mensagem (com uma vírgula antes para gramática)
+        // Adiciona o nome na mensagem
         spanNome.innerText = nome;
 
-        // 2. CONFIGURAÇÃO DO ÁUDIO:
-        musica.muted = false;      // Garante que não está mudo
-        musica.currentTime = 0;    // Reinicia a música do zero
+        // COnfiguração de Audio
+        musica.muted = false;      
+        musica.currentTime = 0;
         musica.play().catch(e => console.log("Erro ao tocar áudio:", e));
 
         // Fecha o popup
@@ -25,7 +25,7 @@
       }
     }
 
-    // Permite apertar 'Enter' no teclado para fechar
+    // Botao de 'Enter'
     document.getElementById("inputNome").addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
         confirmarNome();
