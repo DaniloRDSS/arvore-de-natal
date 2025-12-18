@@ -8,12 +8,88 @@ div {
 body {
   display: grid;
   place-content: center;
-  /* Centraliza vertical e horizontalmente */
-
   margin: 0;
   height: 100vh;
   perspective: 35em;
   background: #000014;
+}
+
+/* Estilos do Pop-up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.popup-overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  font-family: 'Mountains of Christmas', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-content h2 {
+  color: #d42426;
+  margin-bottom: 10px;
+}
+
+.popup-content input {
+  padding: 12px;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px 0;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.popup-content button#btnConfirmar {
+  background-color: #d42426;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Mountains of Christmas', bold;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#nomeUsuario {
+  color: #da9320;
+  font-weight: 850;
+  text-transform: capitalize;
+}
+
+.popup-content button#btnConfirmar:hover {
+  background-color: #b01d1f;
 }
 
 .container {
@@ -603,6 +679,7 @@ div {
 
 }
 
+/* --- Propriedades da Animação (FELIZ NATAL!!) --- */
 .divv {
   width: 100%;
   height: 100px;
@@ -611,53 +688,27 @@ div {
   line-height: 100px;
   color: rgb(215, 215, 215);
   font-family: 'Mountains of Christmas', cursive;
-  
   font-size: 25px;
-
-  /* --- Propriedades da Animação --- */
-
-  /* Nome da animação que criamos acima */
   animation-name: sobeDesce;
-
-  /* Duração do ciclo completo (Subir, Descer, Subir) */
   animation-duration: 4s;
-
-  /* Quantas vezes a animação deve se repetir: 'infinite' para sempre */
   animation-iteration-count: infinite;
-
-  /* Como o ciclo deve prosseguir: 'ease-in-out' para suavizar as pontas */
   animation-timing-function: ease-in-out;
-
 }
 
-
-
-
 @keyframes sobeDesce {
-
-  /* Posição Inicial: 0% */
-  /* Move a div 20 pixels para cima (Subindo) */
   0% {
     transform: translateY(0);
   }
-
-  /* Posição Intermediária: 50% */
-  /* Move a div 20 pixels para baixo (Descendo) */
   50% {
     transform: translateY(20px);
   }
-
-  /* Posição Final: 100% */
-  /* Retorna à posição inicial (Subindo de volta) */
   100% {
     transform: translateY(0);
   }
 }
 
-
-
 /* TEXTO ABAIXO */
-.fin{
+.fin {
   color: rgb(215, 215, 215);
   font-family: "Cause", cursive;
   font-optical-sizing: auto;
